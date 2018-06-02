@@ -13,28 +13,28 @@ import javax.swing.*;
 
 public class MusicPlayerUI extends JFrame implements ActionListener {
 
-	public static String commonPath = "/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/";
+//	public static String commonPath = "/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/";
 
 	//	public static String songPath = "/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/Allsongs.csv";
 //	public static String tempFilePath = "/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/tempFile.txt";
-	static JFrame window = new JFrame ("Something Working");
+//	static JFrame window = new JFrame ("Something Working");
 	JPanel display = new JPanel();
 	static JPanel jp = new JPanel();
-	static JPanel playlist = new JPanel();
+//	static JPanel playlist = new JPanel();
 	static JPanel songList = new JPanel();
-	static JPanel showqueue = new JPanel();
+//	static JPanel showqueue = new JPanel();
 	JButton allSongsButton = new JButton("All Songs");
-	static JButton play = new JButton("Play");
-	static JButton pause = new JButton("Pause");
-	static  JButton stop = new JButton("Stop");
-	static   JButton rewind = new JButton("Rewind");
-	static JButton forward= new JButton("Forward");
-	static JButton repeat = new JButton("Repeat");
-	static JButton next = new JButton("Next");
-	static JButton previous = new JButton("Previous");
-	static JButton createPlaylistButton = new JButton("Create Playlist");
+//	static JButton play = new JButton("Play");
+//	static JButton pause = new JButton("Pause");
+//	static  JButton stop = new JButton("Stop");
+//	static   JButton rewind = new JButton("Rewind");
+//	static JButton forward= new JButton("Forward");
+//	static JButton repeat = new JButton("Repeat");
+//	static JButton next = new JButton("Next");
+//	static JButton previous = new JButton("Previous");
+//	static JButton createPlaylistButton = new JButton("Create Playlist");
 	static JLabel label = new JLabel("Jamify");
-	static JButton shuffle = new JButton("Shuffle Songs");
+//	static JButton shuffle = new JButton("Shuffle Songs");
 
 	private static int y;
 //	MusicPlayerUI()
@@ -171,8 +171,9 @@ public class MusicPlayerUI extends JFrame implements ActionListener {
 					}
 				});
 
-				playlistButton.setBounds(20, 50, 100, 30);
+				playlistButton.setBounds(20, 50, 100, 50);
 				y = y + 30;
+//				playlistButton.setBorder(null);
 				MusicPlayer.playlist.add(playlistButton);
 				int finalI = i;
 

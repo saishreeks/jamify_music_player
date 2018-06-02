@@ -84,61 +84,63 @@ public class AudioPlay extends AllSongs {
         });
 
         /*next song is played when Songs are there in Queue*/
-        MusicPlayer.next.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (!getSongQ().isEmpty()) {
-                    addToSongStack(mediaFile[0].getSource()); //add current song path to stack
+        if((MusicPlayer.next.getActionListeners().length<1)) {
+            MusicPlayer.next.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (!getSongQ().isEmpty()) {
+                        addToSongStack(mediaFile[0].getSource()); //add current song path to stack
+                        mediaPlayer.stop();
+                        mediaPlayer.dispose();
+                        String playSong = getSongQ().poll(); //get next song from Q and delete it from Q
+                        if (playSong.contains("file")) {
+                            mediaFile[0] = new Media(new File(playSong).toString());
+                        } else {
+                            mediaFile[0] = new Media(new File(playSong).toURI().toString());
+                        }
+                        mediaPlayer = new MediaPlayer(mediaFile[0]);   //play the next song from Q
+                        try {
+                            fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " "));
+                            fs.displaySongDetails(fs.fancy(path));
+                            MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
+                            MusicPlayer.songdetailParentPanel.revalidate();
+                            MusicPlayer.songdetailParentPanel.repaint();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                        mediaPlayer.play();
+                        autoNext(getSongQ(), mediaFile);  //ensures that next song in Q is played automatically without clicking next
+                    } else {
+                        //POPUP Saying no songs to play next in the queue?
+                    }
+                }
+            });
+        }
+        if((MusicPlayer.previous.getActionListeners().length<1)) {
+            MusicPlayer.previous.addActionListener(e -> {
+                if (!getSongStack().isEmpty()) {
+                    addToQueueStart(mediaFile[0].getSource());  //add the current song to Q
                     mediaPlayer.stop();
                     mediaPlayer.dispose();
-                    String playSong = getSongQ().poll(); //get next song from Q and delete it from Q
+                    String playSong = popFromSongStack();  //get prev song from stack
                     if (playSong.contains("file")) {
                         mediaFile[0] = new Media(new File(playSong).toString());
                     } else {
                         mediaFile[0] = new Media(new File(playSong).toURI().toString());
                     }
-                    mediaPlayer = new MediaPlayer(mediaFile[0]);   //play the next song from Q
+                    mediaPlayer = new MediaPlayer(mediaFile[0]);
                     try {
-                        fs.fancy(mediaFile[0].getSource().toString().replace("file:","").replace("%20"," "));
-                        fs.displaySongDetails(fs.fancy(path));
-                        MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
-                        MusicPlayer.songdetailParentPanel.revalidate();
-                        MusicPlayer.songdetailParentPanel.repaint();
+                        fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " "));
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
                     mediaPlayer.play();
-                    autoNext(getSongQ(), mediaFile);  //ensures that next song in Q is played automatically without clicking next
+                    autoNext(getSongQ(), mediaFile);
                 } else {
-                    //POPUP Saying no songs to play next in the queue?
+                    //Should we have a POPUP Saying no previous songs to play?
                 }
-            }
-        });
-
-        MusicPlayer.previous.addActionListener(e -> {
-            if (!getSongStack().isEmpty()) {
-                addToQueueStart(mediaFile[0].getSource());  //add the current song to Q
-                mediaPlayer.stop();
-                mediaPlayer.dispose();
-                String playSong = popFromSongStack();  //get prev song from stack
-                if (playSong.contains("file")){
-                    mediaFile[0] = new Media(new File(playSong).toString());
-                } else {
-                    mediaFile[0] = new Media(new File(playSong).toURI().toString());
-                }
-                mediaPlayer = new MediaPlayer(mediaFile[0]);
-                try {
-                    fs.fancy(mediaFile[0].getSource().toString().replace("file:","").replace("%20"," "));
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-                mediaPlayer.play();
-                autoNext(getSongQ(), mediaFile);
-            } else {
-                //Should we have a POPUP Saying no previous songs to play?
-            }
-        });
-
+            });
+        }
         /*Clicking on repeat plays the same song repeatly forever till Stopped.*/
         MusicPlayer.repeat.addActionListener(new ActionListener() {
             @Override

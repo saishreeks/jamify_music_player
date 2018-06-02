@@ -29,7 +29,9 @@ public class CreatePlayListActionListener implements ActionListener {
             playList1.setPlayListPath(playListPath);
             AllSongs.playlistNamePathsList.add(playList1);
             JButton playlistButton = new JButton(playListName);
-            playlistButton.setBounds(20, y, 100, 30);
+            playlistButton.setBounds(20, y, 100, 40);
+//            playlistButton.setBorder(null);
+            playlistButton.setContentAreaFilled(false);
             y = y + 30;
             MusicPlayer.playlist.add(playlistButton);
             MusicPlayer.playlist.revalidate();

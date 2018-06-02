@@ -69,7 +69,7 @@ public class FancyStuff {
 	}
 
 	public String getSongName(String path) {
-		String csvFile = "/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/AllSongs.csv";
+		String csvFile = MusicPlayer.commonPath+"AllSongs.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -99,7 +99,7 @@ public class FancyStuff {
 	}
 
 	public String getSongImage(String path) {
-		String csvFile = "/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/AllSongs.csv";
+		String csvFile = MusicPlayer.commonPath+"AllSongs.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -177,18 +177,18 @@ public class FancyStuff {
 		MusicPlayer.songdetailParentPanel.removeAll();
 		JPanel songdetailPanel = new JPanel();
 //        songdetailPanel.setLocation(100, 500);
-		songdetailPanel.setPreferredSize(new Dimension(50, 50));
-		songdetailPanel.setLayout(new FlowLayout());
+		songdetailPanel.setPreferredSize(new Dimension(50, 100));
+		songdetailPanel.setLayout(new BoxLayout(songdetailPanel,BoxLayout.Y_AXIS));
+		songdetailPanel.setBackground(new Color(0,0,0,65));
 		songdetailPanel.setForeground(Color.WHITE);
 		songdetailPanel.setOpaque(true);
 		songdetailPanel.setVisible(true);
-		JLabel labelTitle = new JLabel(songDetails.getTitle());
-		JLabel labelArtist = new JLabel(songDetails.getArtist());
-		JLabel labelComposer = new JLabel(songDetails.getComposer());
-		JLabel labelGenre = new JLabel(songDetails.getGenre());
-		JLabel labelAlbum = new JLabel(songDetails.getAlbum());
-		JLabel labelYear = new JLabel(songDetails.getYear());
-
+		JLabel labelTitle = new JLabel("Title: "+ songDetails.getTitle());
+		JLabel labelArtist = new JLabel("Artist: "+ songDetails.getArtist());
+		JLabel labelComposer = new JLabel("Composer: " +songDetails.getComposer());
+		JLabel labelGenre = new JLabel("Genre: "+ songDetails.getGenre());
+		JLabel labelAlbum = new JLabel("Album: " +songDetails.getAlbum());
+		JLabel labelYear = new JLabel("Year: " +songDetails.getYear());
 		songdetailPanel.add(labelTitle);
 		songdetailPanel.add(labelArtist);
 		songdetailPanel.add(labelComposer);

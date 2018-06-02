@@ -12,12 +12,17 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class AllSongs extends JPanel implements ActionListener {
-    AudioPlay audioPlayObj;  //surya
+    AudioPlay audioPlayObj;
     FancyStuff fs = new FancyStuff();
     JButton addNewSongBtn = new JButton("Add New Song");
 
     JButton playAllBtn = new JButton("Play All");
+//    Not able to add eachsongpanel to this scrollpane
+//    JScrollPane paneScroll = new JScrollPane();
     JPanel allSongsPanel;
+    Queue<String> tempSongQueue = new LinkedList<String>();
+    List<String> tempAllSongs = new ArrayList<>();
+
     ArrayList<String> allSongsList = new ArrayList<>();
     final static String allSongsFileLocation = MusicPlayer.commonPath + "AllSongs.csv";
     File allSongsFile = new File(allSongsFileLocation);
@@ -44,11 +49,16 @@ public class AllSongs extends JPanel implements ActionListener {
         setBounds(20, 20, 350, 550);
         add(playAllBtn);
         playAllBtn.setBounds(100, 10, 100, 20);
+        playAllBtn.setBorder(null);
         add(addNewSongBtn);
         playAllBtn.addActionListener(this);
         add(addNewSongBtn);
         addNewSongBtn.setBounds(280, 10, 100, 20);
+        addNewSongBtn.setBorder(null);
         addNewSongBtn.addActionListener(this);
+//        paneScroll.setBounds(100,60,400,200);
+//        paneScroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+//        add(paneScroll);
         setVisible(true);
         this.revalidate();
         this.repaint();
@@ -58,7 +68,6 @@ public class AllSongs extends JPanel implements ActionListener {
 //getters and setters
     // Surya asked me to add this method
     public void addToQueueStart(String file) {
-        Queue<String> tempSongQueue = new LinkedList<String>();
         tempSongQueue.add(file);
         while (songQueue.size() > 0) {
             tempSongQueue.add(songQueue.poll());
@@ -121,10 +130,10 @@ public class AllSongs extends JPanel implements ActionListener {
             for (int i = 0, yIndex = 40; i < allSongsList.size(); i++, yIndex += 30) {
                 eachSongPanel = new JPanel();
                 if (isWhite) {
-                    eachSongPanel.setBackground(Color.WHITE);
+                    eachSongPanel.setBackground(new Color(0,0,0,35));
                     isWhite = false;
                 } else {
-                    eachSongPanel.setBackground(Color.lightGray);
+                    eachSongPanel.setBackground(new Color(0,0,0,65));
                     isWhite = true;
                 }
 //                eachSongPanel.setLayout(null);
@@ -146,6 +155,7 @@ public class AllSongs extends JPanel implements ActionListener {
                 eachSongPanel.add(deleteSongLabel);
                 eachSongPanel.add(addLabel);
                 this.add(eachSongPanel);
+//                paneScroll.add(eachSongPanel);
 
                 int finalI = i;
                 String songPath = allSongsList.get(finalI).split(",")[2];
@@ -186,23 +196,28 @@ public class AllSongs extends JPanel implements ActionListener {
                     e1.printStackTrace();
                 }
 //
+
+                if(songQueue.size() >0){
+                    songQueue.clear();  //clearing because everytime a song is clicked, the Q & stack should be deleted.
+                    songStack.clear();
+                    setSongQ(songQueue);
+                }
                 if (audioPlayObj == null) {
+                    audioPlayObj = new AudioPlay();
 //                        	songNameQueue.clear();
                     songQueue.clear();  //clearing because everytime a song is clicked, the Q & stack should be deleted.
                     songStack.clear();
-                    audioPlayObj = new AudioPlay();
                 } else {
                     audioPlayObj.mediaPlayer.stop();
                     audioPlayObj.mediaPlayer.dispose();
 //                            songNameQueue.clear();
                     songQueue.clear();
                     songStack.clear();
-                    audioPlayObj = new AudioPlay();
                 }
                 try {
+
+
                     audioPlayObj.setupCtrlSong(songPath);
-
-
                     audioPlayObj.mediaPlayer.play();
                     audioPlayObj.autoNext(getSongQ(), audioPlayObj.mediaFile);
                 } catch (Exception e1) {
@@ -233,7 +248,7 @@ public class AllSongs extends JPanel implements ActionListener {
                 }
 
                 try {
-                    File tempFile = new File(MusicPlayerUI.commonPath + "tempFile.txt");
+                    File tempFile = new File(MusicPlayer.commonPath + "tempFile.txt");
                     BufferedReader newBR = new BufferedReader(new FileReader(inputFile));
                     BufferedWriter bw = new BufferedWriter(new FileWriter(tempFile));
                     String lineToRemove = songName.getText();
@@ -251,7 +266,10 @@ public class AllSongs extends JPanel implements ActionListener {
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
-
+                // This code was removed. Please keep it. This is for refreshing the all Songs panel.
+//                removeAll();
+//                boolean displayAddSong = true;
+//                displaySongsOnThePanel(inputFile, displayAddSong);
 
             }
         });
@@ -301,21 +319,16 @@ public class AllSongs extends JPanel implements ActionListener {
                                 songForQueue = new JPanel();
                                 songForQueue.setPreferredSize(new Dimension(100, 30));
 //        							songForQueue.setOpaque(false);
+                                songForQueue.setBackground(new Color(0,0,0,35));
                                 songForQueue.setLocation(650, 300);
                                 y1 = y1 + 30;
                                 MusicPlayer.showqueue.add(songForQueue);
-//     							        System.out.println(s.toString());
                                 songName = fs.getSongName(s.toString());
 
                                 JLabel label = new JLabel(songName);
                                 songForQueue.add(label);
                                 MusicPlayer.showqueue.validate();
                                 MusicPlayer.showqueue.repaint();
-
-                                // there is function in the same class called, songName.addmouselistener
-                                // in this case we can use the same function as label.addmouselisener,
-                                //instead when Surya, u use the songname, please use the same variable as songName, then we
-                                // we might be ableto use same function
 
                             }
 
@@ -350,8 +363,6 @@ public class AllSongs extends JPanel implements ActionListener {
                 popup.show(e.getComponent(), e.getX(), e.getY());
             }
         });
-
-
     }
 
     /**
@@ -369,25 +380,34 @@ public class AllSongs extends JPanel implements ActionListener {
      * @Saishree on click of play all, it starts playing the songs in the order its is being displayed
      */
     private void listenerForPlayAllBtn() {
-        List<String> tempAllSongs = new ArrayList<>();
+
         for (String s : allSongsList) {
             String[] temp = s.split(",");
             tempAllSongs.add(temp[2]);
         }
+        if(songQueue.size()>0)
+        {
+            songQueue.clear();
+            songStack.clear();
+            setSongQ(songQueue);
+        }
         songQueue.addAll(tempAllSongs);
-        if (audioPlayObj == null) {
-//                        	songNameQueue.clear();
-            audioPlayObj = new AudioPlay();
-        } else {
+
+
+        setSongQ(songQueue);
+        if (audioPlayObj != null) {
+//            songQueue.clear();  //clearing because everytime a song is clicked, the Q & stack should be deleted.
             audioPlayObj.mediaPlayer.stop();
             audioPlayObj.mediaPlayer.dispose();
 //                            songNameQueue.clear();
+        }else {
             audioPlayObj = new AudioPlay();
         }
         try {
+            songQueue=getSongQ();
             String path = songQueue.poll();
             audioPlayObj.setupCtrlSong(path);
-//            fs.fancy(path);
+
             fs.displaySongDetails(fs.fancy(path));
             MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
             MusicPlayer.songdetailParentPanel.revalidate();
@@ -397,8 +417,6 @@ public class AllSongs extends JPanel implements ActionListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 
     /**
@@ -417,6 +435,8 @@ public class AllSongs extends JPanel implements ActionListener {
 
         eachSongPanel = new JPanel();
         eachSongPanel.setBounds(20, y, 350, 30);
+        eachSongPanel.setBackground(new Color(0,0,0,30));
+//        eachSongPanel.setOpaque(false);
         this.add(eachSongPanel);
 
         eachSongPanel.add(newSongLabel);
