@@ -56,6 +56,7 @@ public class AllSongs extends JPanel implements ActionListener {
 
     //    static volatile Queue<String> songNameQueue=new LinkedList<String>();
 //getters and setters
+    // Surya asked me to add this method
     public void addToQueueStart(String file) {
         Queue<String> tempSongQueue = new LinkedList<String>();
         tempSongQueue.add(file);
@@ -64,6 +65,7 @@ public class AllSongs extends JPanel implements ActionListener {
         }
         songQueue = tempSongQueue;
     }
+    // The method ends here
 
     public Stack<String> getSongStack() {
         return songStack;
@@ -176,17 +178,14 @@ public class AllSongs extends JPanel implements ActionListener {
 
                 super.mouseClicked(e);
                 try {
-                    JPanel songDetailsPanel = displaySongDetails(fs.fancy(songPath));
-                    MusicPlayer.window.getContentPane().add(songDetailsPanel);
-                    songDetailsPanel.revalidate();
-                    songDetailsPanel.repaint();
+                    fs.displaySongDetails(fs.fancy(songPath));
+                    MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
+                    MusicPlayer.songdetailParentPanel.revalidate();
+                    MusicPlayer.songdetailParentPanel.repaint();
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
-//                String Name = fs.getSongName(songPath);
-//                JLabel songName = new JLabel(Name);
-//                songName.setBounds(100, 300, 30, 10);
-//                MusicPlayer.window.add(songName);
+//
                 if (audioPlayObj == null) {
 //                        	songNameQueue.clear();
                     songQueue.clear();  //clearing because everytime a song is clicked, the Q & stack should be deleted.
@@ -355,32 +354,6 @@ public class AllSongs extends JPanel implements ActionListener {
 
     }
 
-    private JPanel displaySongDetails(SongDetails songDetails) {
-
-        JPanel songdetailPanel = new JPanel();
-        songdetailPanel.setLocation(100, 500);
-        songdetailPanel.setPreferredSize(new Dimension(50, 50));
-        songdetailPanel.setLayout(new FlowLayout());
-        songdetailPanel.setForeground(Color.WHITE);
-        songdetailPanel.setOpaque(true);
-        songdetailPanel.setVisible(true);
-        JLabel labelTitle = new JLabel(songDetails.getTitle());
-        JLabel labelArtist = new JLabel(songDetails.getArtist());
-        JLabel labelComposer = new JLabel(songDetails.getComposer());
-        JLabel labelGenre = new JLabel(songDetails.getGenre());
-        JLabel labelAlbum = new JLabel(songDetails.getAlbum());
-        JLabel labelYear = new JLabel(songDetails.getYear());
-
-        songdetailPanel.add(labelTitle);
-        songdetailPanel.add(labelArtist);
-        songdetailPanel.add(labelComposer);
-        songdetailPanel.add(labelGenre);
-        songdetailPanel.add(labelAlbum);
-        songdetailPanel.add(labelYear);
-        return songdetailPanel;
-
-    }
-
     /**
      * Respond to user's click on one of the two buttons.
      */
@@ -414,8 +387,11 @@ public class AllSongs extends JPanel implements ActionListener {
         try {
             String path = songQueue.poll();
             audioPlayObj.setupCtrlSong(path);
-            fs.fancy(path);
-
+//            fs.fancy(path);
+            fs.displaySongDetails(fs.fancy(path));
+            MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
+            MusicPlayer.songdetailParentPanel.revalidate();
+            MusicPlayer.songdetailParentPanel.repaint();
             audioPlayObj.mediaPlayer.play();
             audioPlayObj.autoNext(getSongQ(), audioPlayObj.mediaFile);
         } catch (Exception e) {

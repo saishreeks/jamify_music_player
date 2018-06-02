@@ -148,27 +148,6 @@ public class FancyStuff {
 			songDetails.setGenre(metadata.get("xmpDM:genre") );
 			songDetails.setTitle(metadata.get("title"));
 			songDetails.setYear(metadata.get("xmpDM:year"));
-//			JFrame frame = new JFrame();
-//			frame.setLayout(new FlowLayout());
-//			frame.setSize(400, 400);
-//			JLabel labelTitle = new JLabel(metadata.get("title") );
-//			JLabel labelArtist = new JLabel(metadata.get("xmpDM:artist") );
-//			JLabel labelComposer = new JLabel(metadata.get("xmpDM:composer") );
-//			JLabel labelGenre = new JLabel(metadata.get("xmpDM:genre") );
-//			JLabel labelAlbum = new JLabel(metadata.get("xmpDM:album") );
-//			JLabel labelYear = new JLabel(metadata.get("xmpDM:year") );
-//			frame.add(labelTitle);
-//			frame.add(labelArtist);frame.add(labelComposer);frame.add(labelGenre);frame.add(labelAlbum);
-//			frame.add(labelYear);
-//			MusicPlayer.songdetail.add(labelTitle);
-//			MusicPlayer.songdetail.add(labelArtist);
-//			MusicPlayer.songdetail.add(labelComposer);
-//			MusicPlayer.songdetail.add(labelGenre);
-//			MusicPlayer.songdetail.add(labelAlbum);
-//			MusicPlayer.songdetail.add(labelYear);
-
-//			frame.setVisible(true);
-//			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
 			System.out.println("Title: " + metadata.get("title"));
@@ -191,6 +170,36 @@ public class FancyStuff {
 		return songDetails;
 	}
 
+	public void displaySongDetails(SongDetails songDetails) {
+
+//        JPanel songdetailParentPanel = new JPanel();
+
+		MusicPlayer.songdetailParentPanel.removeAll();
+		JPanel songdetailPanel = new JPanel();
+//        songdetailPanel.setLocation(100, 500);
+		songdetailPanel.setPreferredSize(new Dimension(50, 50));
+		songdetailPanel.setLayout(new FlowLayout());
+		songdetailPanel.setForeground(Color.WHITE);
+		songdetailPanel.setOpaque(true);
+		songdetailPanel.setVisible(true);
+		JLabel labelTitle = new JLabel(songDetails.getTitle());
+		JLabel labelArtist = new JLabel(songDetails.getArtist());
+		JLabel labelComposer = new JLabel(songDetails.getComposer());
+		JLabel labelGenre = new JLabel(songDetails.getGenre());
+		JLabel labelAlbum = new JLabel(songDetails.getAlbum());
+		JLabel labelYear = new JLabel(songDetails.getYear());
+
+		songdetailPanel.add(labelTitle);
+		songdetailPanel.add(labelArtist);
+		songdetailPanel.add(labelComposer);
+		songdetailPanel.add(labelGenre);
+		songdetailPanel.add(labelAlbum);
+		songdetailPanel.add(labelYear);
+
+		MusicPlayer.songdetailParentPanel.add(songdetailPanel, BorderLayout.SOUTH);
+//        return songdetailParentPanel;
+
+	}
 }
 
 

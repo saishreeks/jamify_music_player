@@ -21,7 +21,6 @@ public class MusicPlayer extends JFrame implements ActionListener {
     static AllSongs allSongs;
     JPanel display = new JPanel();
     static JPanel playlist = new JPanel();
-    static JPanel songdetail = new JPanel();
     static JPanel showqueue = new JPanel();
     JButton allSongsButton = new JButton("All Songs");
     JButton createPlaylistButton = new JButton("Create Playlist");
@@ -35,6 +34,8 @@ public class MusicPlayer extends JFrame implements ActionListener {
     static JButton next = new JButton("Next");
     static JButton previous = new JButton("Previous");
     static JButton shuffle = new JButton("Shuffle Songs");
+    static JPanel songdetailParentPanel = new JPanel();
+    static JPanel songdetail = new JPanel();
     JPanel allSongsPanel;
 
     public MusicPlayer() {
@@ -43,9 +44,7 @@ public class MusicPlayer extends JFrame implements ActionListener {
         display.setBackground(Color.WHITE);
         playlist.setBackground(Color.black);
         playlist.setLayout(new BoxLayout(playlist,BoxLayout.Y_AXIS));
-        showqueue.setBackground(Color.white);
-//        songdetail.setOpaque(true);
-//        songdetail.setLayout(null);
+        showqueue.setBackground(Color.white);;
         window.setSize(1000,500);
         try {
             window.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File("/Users/satishrambhatla/Documents/workspace/Jamify/src/jamify/background.jpg")))));
@@ -56,10 +55,10 @@ public class MusicPlayer extends JFrame implements ActionListener {
         //window.setResizable(false);
         display.setPreferredSize(new Dimension(400,200));
         playlist.setPreferredSize(new Dimension(200,100));
-//        songdetail.setPreferredSize(new Dimension(500,100));
-//        songdetail.setLocation(100,500);
         showqueue.setPreferredSize(new Dimension(300,200));
         showqueue.setLayout(new BoxLayout(showqueue, BoxLayout.Y_AXIS));
+        songdetailParentPanel.setLayout(new BorderLayout());
+        songdetailParentPanel.setOpaque(false);
         playlist.add(allSongsButton);
         allSongsButton.setBounds(10,10,30,20);
 

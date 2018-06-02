@@ -100,6 +100,10 @@ public class AudioPlay extends AllSongs {
                     mediaPlayer = new MediaPlayer(mediaFile[0]);   //play the next song from Q
                     try {
                         fs.fancy(mediaFile[0].getSource().toString().replace("file:","").replace("%20"," "));
+                        fs.displaySongDetails(fs.fancy(path));
+                        MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
+                        MusicPlayer.songdetailParentPanel.revalidate();
+                        MusicPlayer.songdetailParentPanel.repaint();
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
