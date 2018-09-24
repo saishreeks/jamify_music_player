@@ -14,6 +14,7 @@ import java.io.IOException;
 public class CreatePlayListActionListener implements ActionListener {
     public String playListName;
     int y = 50;
+    Timer tm = new Timer(500, this);
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -29,7 +30,9 @@ public class CreatePlayListActionListener implements ActionListener {
             playList1.setPlayListPath(playListPath);
             AllSongs.playlistNamePathsList.add(playList1);
             JButton playlistButton = new JButton(playListName);
-            playlistButton.setBounds(20, y, 100, 30);
+            playlistButton.setBounds(20, y, 100, 40);
+
+            playlistButton.setContentAreaFilled(false);
             y = y + 30;
             MusicPlayer.playlist.add(playlistButton);
             MusicPlayer.playlist.revalidate();
@@ -82,4 +85,6 @@ public class CreatePlayListActionListener implements ActionListener {
             });
         }
     }
+
+
 }
