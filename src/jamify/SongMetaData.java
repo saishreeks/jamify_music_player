@@ -19,13 +19,14 @@ import java.io.*;
 import java.util.ArrayList;
 
 
-public class FancyStuff {
+public class SongMetaData {
 
 	public SongDetails fancy(String songPath) throws IOException {
 		String name = songPath;
 		SongDetails songDetails = null;
 		try{
-			DisplayImage(this.getSongImage(songPath));
+			if (this.getSongImage(songPath)!= null)
+				DisplayImage(this.getSongImage(songPath));
 			//DisplayName(this.getSongName(songPath));
 			songDetails = getMetaData(name);
 
@@ -38,34 +39,21 @@ public class FancyStuff {
 		return songDetails;
 	}
 
-	public static void DisplayName(String songNameQ) throws IOException {
-
-//		JFrame frame = new JFrame();
-//		frame.setLayout(new FlowLayout());
-//		frame.setSize(400, 400);
-		JLabel lbl = new JLabel(songNameQ);
-		lbl.setForeground(Color.white);
-		lbl.setLocation(200,100);
-		MusicPlayer.songdetail.add(lbl);
-//		frame.add(lbl);
-//		frame.setVisible(true);
-//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
 
 	public static void DisplayImage(String songImageQ) throws IOException {
 
+		MusicPlayer.songdetail.removeAll();
+
 		BufferedImage img = ImageIO.read(new File(String.valueOf(songImageQ)));
-		ImageIcon icon = new ImageIcon(img);
-//		JFrame frame = new JFrame();
-//		frame.setLayout(new FlowLayout());
-//		frame.setSize(200, 300);
+
 		JLabel lbl = new JLabel();
+		lbl.setSize(100,100);
+		Image dimg = img.getScaledInstance(lbl.getWidth(), lbl.getHeight(),
+				Image.SCALE_SMOOTH);
+		ImageIcon icon = new ImageIcon(dimg);
 		lbl.setIcon(icon);
-		lbl.setLocation(100,100);
 		MusicPlayer.songdetail.add(lbl);
-//		frame.add(lbl);
-//		frame.setVisible(true);
-//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 	}
 
 	public String getSongName(String path) {
@@ -76,7 +64,8 @@ public class FancyStuff {
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
 			while ((line = br.readLine()) != null) {
-				// use comma as separator
+				line.trim();
+				if (line.isEmpty()) continue;
 				String[] csvitems = line.split(cvsSplitBy);
 				if (csvitems[2].equals(path)) {
 					return csvitems[1];
@@ -101,16 +90,21 @@ public class FancyStuff {
 	public String getSongImage(String path) {
 		String csvFile = MusicPlayer.commonPath+"AllSongs.csv";
 		BufferedReader br = null;
-		String line = "";
+		String line="";
 		String cvsSplitBy = ",";
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
 			while ((line = br.readLine()) != null) {
+				line.trim();
+				if (line.isEmpty()) continue;
+
 				// use comma as separator
 				String[] csvitems = line.split(cvsSplitBy);
 				if (csvitems[2].equals(path)) {
-					return csvitems[3];
+					if (csvitems.length==4)
+						return csvitems[3];
 				}
+
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -149,15 +143,6 @@ public class FancyStuff {
 			songDetails.setTitle(metadata.get("title"));
 			songDetails.setYear(metadata.get("xmpDM:year"));
 
-
-			System.out.println("Title: " + metadata.get("title"));
-			System.out.println("Artists: " + metadata.get("xmpDM:artist"));
-			System.out.println("Composer: " + metadata.get("xmpDM:composer"));
-			System.out.println("Genre: " + metadata.get("xmpDM:genre"));
-			System.out.println("Album: " + metadata.get("xmpDM:album"));
-			System.out.println("Year: " + metadata.get("xmpDM:year"));
-			//System.out.println("Alnum: "+metadata.get("xmpDM:image"));
-
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -175,9 +160,10 @@ public class FancyStuff {
 //        JPanel songdetailParentPanel = new JPanel();
 
 		MusicPlayer.songdetailParentPanel.removeAll();
+
 		JPanel songdetailPanel = new JPanel();
-//        songdetailPanel.setLocation(100, 500);
-		songdetailPanel.setPreferredSize(new Dimension(50, 100));
+
+		songdetailPanel.setPreferredSize(new Dimension(600, 100));
 		songdetailPanel.setLayout(new BoxLayout(songdetailPanel,BoxLayout.Y_AXIS));
 		songdetailPanel.setBackground(new Color(0,0,0,65));
 		songdetailPanel.setForeground(Color.WHITE);
@@ -196,8 +182,18 @@ public class FancyStuff {
 		songdetailPanel.add(labelAlbum);
 		songdetailPanel.add(labelYear);
 
-		MusicPlayer.songdetailParentPanel.add(songdetailPanel, BorderLayout.SOUTH);
-//        return songdetailParentPanel;
+
+
+		JPanel innerParent = new JPanel();
+		innerParent.setBackground(new Color(0,0,0,65));
+		innerParent.setOpaque(false);
+		innerParent.add(songdetailPanel);
+		innerParent.add(MusicPlayer.songdetail);
+		MusicPlayer.songdetailParentPanel.add(innerParent,BorderLayout.SOUTH);
+
+
+
+
 
 	}
 }

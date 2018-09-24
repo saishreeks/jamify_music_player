@@ -7,16 +7,13 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-import javax.swing.BoxLayout;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class MusicPlayer extends JFrame implements ActionListener {
 
-    static String commonPath = "/Users/saishree/Downloads/OOAD_Project/src/jamify/resources/";
+    JPanel windowPanel = new JPanel();
+
+    static String commonPath = "/Users/saishree/Downloads/KindaFinal/src/jamify/resources/";
     static JFrame window = new JFrame ("Jamify");
     static AllSongs allSongs;
     JPanel display = new JPanel();
@@ -36,40 +33,61 @@ public class MusicPlayer extends JFrame implements ActionListener {
     static JButton shuffle = new JButton();
     static JPanel songdetailParentPanel = new JPanel();
     static JPanel songdetail = new JPanel();
-//    static JPanel createPlaylistLocation = new JPanel();
+
     JPanel allSongsPanel;
+    static JSlider slider = new JSlider(0,0,1000,0);
+    static PlayingTimer playingTimer = new PlayingTimer(slider);
 
     public MusicPlayer() {
 
-        allSongs = new AllSongs();
-        display.setBackground(new Color(0,0,0,65));
-//        createPlaylistLocation.setOpaque(true);
 
-        playlist.setBackground(Color.black);
+
+        songdetail.setOpaque(false);
+
+        allSongs = new AllSongs();
+
+        JScrollPane scrollPane = new JScrollPane(allSongs, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+//        scrollPane.setPreferredSize(new Dimension(600, 600));
+        // Add panel to frame
+        scrollPane.setVisible(true);
+        window.add(scrollPane);
+
+//        display.setBackground(new Color(0,0,0,65));
+        display.setBackground(new Color(57, 205, 222));
+        playlist.setBackground(new Color(80, 193, 222));
+        display.setOpaque(false);
+        playlist.setOpaque(false);
+
+
+//        playlist.setBackground(Color.black);
         playlist.setLayout(new BoxLayout(playlist,BoxLayout.Y_AXIS));
-        showqueue.setBackground(Color.white);;
-        window.setSize(1000,1000);
-//        window.setResizable(false);
+        showqueue.setBackground(Color.white);
+
+
+
+        playingTimer.start();
+        playingTimer.pauseTimer();
+
         try {
-            window.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File(commonPath+"bk1.jpg")))));
+            window.setContentPane(new JLabel(new ImageIcon(ImageIO.read(new File(commonPath+"pattern.png")))));
         } catch (IOException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         //window.setResizable(false);
-        display.setPreferredSize(new Dimension(400,200));
+        display.setPreferredSize(new Dimension(400,80));
 
         playlist.setPreferredSize(new Dimension(200,100));
-        playlist.setBackground(new Color(0,0,0,65));
+//        playlist.setBackground(new Color(0,0,0,65));
         showqueue.setPreferredSize(new Dimension(300,200));
         showqueue.setLayout(new BoxLayout(showqueue, BoxLayout.Y_AXIS));
-//        showqueue.setBackground(new Color(0,0,0,65));
         showqueue.setOpaque(false);
 
         songdetailParentPanel.setLayout(new BorderLayout());
+
         songdetailParentPanel.setOpaque(false);
         allSongsButton.setBounds(10,10,30,400);
-//        allSongsButton.setBorder(null);
+
         allSongsButton.setContentAreaFilled(false);
         playlist.add(allSongsButton);
 
@@ -89,18 +107,14 @@ public class MusicPlayer extends JFrame implements ActionListener {
 
         allSongsButton.addActionListener(Action1);
         playlist.add(createPlaylistButton);
-//        createPlaylistLocation.setLayout(null);
+
         createPlaylistButton.setBounds(50,400,50,40);
-//        createPlaylistButton.setBorder(null);
-//        createPlaylistLocation.add(createPlaylistButton);
+
         createPlaylistButton.addActionListener(new CreatePlayListActionListener());
         createPlaylistButton.setContentAreaFilled(false);
-//        window.add(display);
-//        display.add(label);
-//		window.add(jp);
-//        playlist.add(createPlaylistLocation);
+
         window.setLayout(new BorderLayout(3,3));
-//        window.add(playlist);
+
 
 
         play.setPreferredSize(new Dimension(60,60));
@@ -130,22 +144,35 @@ public class MusicPlayer extends JFrame implements ActionListener {
         previous.setPreferredSize(new Dimension(60,60));
         previous.setIcon(new ImageIcon(commonPath+"previousButton.png"));
         previous.setContentAreaFilled(false);
+        slider.setSize(200,50);
         display.setLayout(new FlowLayout());
 
-        display.add(play);
-        display.add(stop);
-        display.add(pause);
-        display.add(rewind);
-        display.add(forward);
         display.add(repeat);
-        display.add(shuffle);
-        display.add(next);
         display.add(previous);
-        window.setLocation(100,100);
+        display.add(rewind);
+        display.add(play);
+        display.add(pause);
+        display.add(stop);
+        display.add(forward);
+        display.add(next);
+        display.add(shuffle);
+
+        display.add(slider);
+//        window.setLocation(100,100);
         window.add(playlist,BorderLayout.WEST);
         window.add(showqueue,BorderLayout.EAST);
         window.add(display,BorderLayout.SOUTH);
+
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+//        window.setSize(1000,800);
+
+
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        window.pack();
+        window.setSize(screenSize.width,screenSize.height);
+
 
         window.pack();
         window.setVisible(true);

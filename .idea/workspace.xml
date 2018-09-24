@@ -2,20 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$3$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AllSongs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/Allsongs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$7$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$7$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/AudioPlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/CreatePlayListActionListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/DisplayAllSongs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/FancyStuff.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/MusicPlayerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/PlaylistNamePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/PlaylistNamePath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/bk1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/greenhills.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/play.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled folder 2/jamify/rewind.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jamify/AllSongs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/AllSongs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jamify/AudioPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/AudioPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jamify/FancyStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/FancyStuff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jamify/FancyStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/SongMetaData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jamify/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/MusicPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/t.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jamify/MusicPlayerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jamify/MusicPlayerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jamify/resources/Allsongs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jamify/resources/Playlist1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/t.tmp" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +63,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/OOAD_Project$MusicPlayerUI.coverage" NAME="MusicPlayerUI Coverage Results" MODIFIED="1528068705014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>jamify.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -73,149 +115,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MusicPlayerUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayerUI.java">
+      <file leaf-file-name="AllSongs.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jamify/resources/AllSongs.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2065">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="99" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="101" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllSongs.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AllSongs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jamify/AllSongs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="354" column="5" selection-start-line="354" selection-start-column="5" selection-end-line="354" selection-end-column="5" />
+            <state relative-caret-position="378">
+              <caret line="567" column="44" selection-start-line="567" selection-start-column="44" selection-end-line="567" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1002#1010#0" expanded="true" />
-                <element signature="e#1274#1282#0" expanded="true" />
-                <element signature="e#2232#2233#0" expanded="true" />
-                <element signature="e#2267#2268#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#5766#7306#0" expanded="true" />
-                <element signature="e#7305#7306#0" expanded="true" />
-                <element signature="e#7489#9108#0" expanded="true" />
-                <element signature="e#9107#9108#0" expanded="true" />
-                <element signature="e#9264#13622#0" expanded="true" />
-                <element signature="e#13621#13622#0" expanded="true" />
-                <element signature="e#17796#18048#0" expanded="true" />
-                <element signature="e#18047#18048#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FancyStuff.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/FancyStuff.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="170" column="5" lean-forward="true" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SongDetails.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/SongDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#769#770#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1236">
-              <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SavePlaylists.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/SavePlaylists.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreatePlayListActionListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaylistNamePath.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/PlaylistNamePath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AudioPlay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jamify/AudioPlay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="90" column="58" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="90" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#1852#1853#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
-                <element signature="e#2066#2067#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
-                <element signature="e#2320#2321#0" expanded="true" />
-                <element signature="e#2410#2411#0" expanded="true" />
-                <element signature="e#2570#2571#0" expanded="true" />
-                <element signature="e#2620#2621#0" expanded="true" />
-                <element signature="e#5528#5529#0" expanded="true" />
-                <element signature="e#5607#5608#0" expanded="true" />
+                <element signature="method#addToQueueStart#0;class#AllSongs#0" />
+                <element signature="docComment;method#displaySongsOnThePanel#0;class#AllSongs#0" />
               </folding>
             </state>
           </provider>
@@ -232,32 +149,46 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>showqueue</find>
-      <find>saishree</find>
-      <find>/getters and setters</find>
-      <find>fs.fancy</find>
-      <find>mouse</find>
-      <find>SongDetails song</find>
-      <find>songdetail</find>
-      <find>displaySongDe</find>
-      <find>allSong</find>
-      <find>groupLayout</find>
-      <find>allSongs</find>
-      <find>songde</find>
-      <find>east</find>
-      <find>songName</find>
-      <find>songQu</find>
-      <find>UI</find>
-      <find>songname.addMouseListener</find>
-      <find>display</find>
-      <find>playAll</find>
-      <find>next</find>
-      <find>p</find>
-      <find>songdet</find>
+      <find>620</find>
+      <find>800</find>
+      <find>850</find>
+      <find>880</find>
+      <find>fore</find>
+      <find>comm</find>
+      <find>commonPath</find>
+      <find>tempSongQueue</find>
+      <find>printFirstSong</find>
+      <find>print</find>
+      <find>firstsongprint</find>
+      <find>tempAllSongs</find>
+      <find>DisplayImage</find>
+      <find>getSongImage</find>
       <find>fs</find>
       <find>displaySongDetails</find>
-      <find>auto</find>
+      <find>songdetailParentPanel</find>
+      <find>black</find>
+      <find>Sout</find>
+      <find>setOpaque</find>
+      <find>display.set</find>
+      <find>allSongs</find>
+      <find>Luis</find>
+      <find>$PROJECT_DIR$/../../../SuryaRajasekaran/Desktop/JamifySongs</find>
+      <find>$PROJECT_DIR$/../../../SuryaRajasekaran/Desktop/JamifySongs/Songs</find>
+      <find>$PROJECT_DIR$/../../../SuryaRajasekaran/Desktop/JamifySongs/CoverArt</find>
+      <find>$PROJECT_DIR$/../../../SuryaRajasekaran/Desktop/JamifySongs/</find>
+      <find>so</find>
+      <find>audi</find>
+      <find>play</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>$PROJECT_DIR$/../send/songs</replace>
+      <replace>$PROJECT_DIR$/../send/Songs</replace>
+      <replace>$PROJECT_DIR$/../send/</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/jamify/resources</dir>
+    </dirStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -272,21 +203,27 @@
       <list>
         <option value="$PROJECT_DIR$/src/jamify/SavePlaylists.java" />
         <option value="$PROJECT_DIR$/src/jamify/PlaylistNamePath.java" />
-        <option value="$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java" />
-        <option value="$PROJECT_DIR$/src/jamify/MusicPlayerUI.java" />
         <option value="$PROJECT_DIR$/src/jamify/SongDetails.java" />
-        <option value="$PROJECT_DIR$/src/jamify/MusicPlayer.java" />
-        <option value="$PROJECT_DIR$/src/jamify/FancyStuff.java" />
+        <option value="$PROJECT_DIR$/src/jamify/DisplayAllSongs.java" />
+        <option value="$PROJECT_DIR$/src/jamify/Allsongs.csv" />
+        <option value="$PROJECT_DIR$/src/jamify/resources/Allsongs.csv" />
         <option value="$PROJECT_DIR$/src/jamify/AudioPlay.java" />
+        <option value="$PROJECT_DIR$/src/jamify/PlayingTimer.java" />
+        <option value="$PROJECT_DIR$/src/jamify/FancyStuff.java" />
+        <option value="$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java" />
+        <option value="$PROJECT_DIR$/src/jamify/MusicPlayer.java" />
+        <option value="$PROJECT_DIR$/src/jamify/MusicPlayerUI.java" />
+        <option value="$PROJECT_DIR$/src/jamify/SongMetaData.java" />
         <option value="$PROJECT_DIR$/src/jamify/AllSongs.java" />
+        <option value="$PROJECT_DIR$/src/jamify/resources/AllSongs.csv" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1366" />
-    <option name="height" value="800" />
+    <option name="width" value="1440" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -301,23 +238,26 @@
         <subPane>
           <expand>
             <path>
-              <item name="Backup_jamify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backup_jamify" type="462c0819:PsiDirectoryNode" />
+              <item name="KindaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KindaFinal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Backup_jamify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backup_jamify" type="462c0819:PsiDirectoryNode" />
+              <item name="KindaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KindaFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Backup_jamify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Backup_jamify" type="462c0819:PsiDirectoryNode" />
+              <item name="KindaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KindaFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="jamify" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Backup_jamify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="KindaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KindaFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="jamify" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,22 +265,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled folder 2" type="58d84e3e:PackageViewProjectNode" />
-              <item name="untitled folder 2" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="untitled folder 2" type="58d84e3e:PackageViewProjectNode" />
-              <item name="untitled folder 2" type="616d4139:PackageViewModuleNode" />
-              <item name="jamify" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,6 +283,18 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/OOAD_Project/src/jamify/AllSongs.java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/jamify/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jamify" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/jamify/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -373,7 +310,9 @@
   </component>
   <component name="RunManager" selected="Application.MusicPlayerUI">
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="WIDTH" value="0" />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
@@ -446,17 +385,170 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="untitled folder 2" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OdpsJavaConfigurationType" factoryName="MaxCompute Java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <odpsJavaType />
+      <odpsProjectName />
+      <tableName />
+      <tableColumns />
+      <tablePartition />
       <method />
     </configuration>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
@@ -486,43 +578,45 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="806" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" order="10" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3278237" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info id="Image Layers" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3278237" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.21522693" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39944905" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="simpleUML" order="11" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286517" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32722145" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21597221" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3977433" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="right" id="JetGradle" order="7" />
-      <window_info id="simpleUML" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Changes" order="10" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Problems" order="8" />
-      <window_info anchor="right" id="Code Iris" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Application Servers" order="14" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Project Explorer" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Job Explorer" order="8" />
+      <window_info anchor="right" id="Properties" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="DB Browser" order="9" />
+      <window_info id="Nl-Palette" order="10" />
+      <window_info anchor="right" id="FAQ Robot" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="MaxCompute Console" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Sequence" order="12" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -536,156 +630,134 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/jamify/AudioPlay.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/jamify/FancyStuff.java</url>
-          <line>143</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/jamify/AllSongs.java</url>
-          <line>371</line>
+          <line>520</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/jamify/AudioPlay.java</url>
-          <line>196</line>
+          <line>100</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/jamify/AudioPlay.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="49" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="audioPlayObj" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>audioPlayObj</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>songStack</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>getSongQ()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>csvitems.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>csvitems[2].equals(path)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>csvitems[2]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>path</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>metadata.get(&quot;xmpDM:artist&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>csvitems</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>line</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayerUI.java">
+    <entry file="file://$PROJECT_DIR$/src/jamify/AllSongs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="99" />
+        <state relative-caret-position="8250">
+          <caret line="571" column="38" selection-start-line="571" selection-start-column="38" selection-end-line="571" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#addToQueueStart#0;class#AllSongs#0" />
+            <element signature="docComment;method#displaySongsOnThePanel#0;class#AllSongs#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/FancyStuff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/SavePlaylists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/PlaylistNamePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jamify/AudioPlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+        <state relative-caret-position="1155">
+          <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2570#2571#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#5528#5529#0" expanded="true" />
-            <element signature="e#5607#5608#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/AllSongs.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4410">
-          <caret line="294" column="64" lean-forward="true" selection-start-line="294" selection-start-column="64" selection-end-line="294" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1002#1010#0" expanded="true" />
-            <element signature="e#1274#1282#0" expanded="true" />
-            <element signature="e#2232#2233#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#5766#7306#0" expanded="true" />
-            <element signature="e#7305#7306#0" expanded="true" />
-            <element signature="e#7489#9108#0" expanded="true" />
-            <element signature="e#9107#9108#0" expanded="true" />
-            <element signature="e#9264#13622#0" expanded="true" />
-            <element signature="e#13621#13622#0" expanded="true" />
-            <element signature="e#17796#18048#0" expanded="true" />
-            <element signature="e#18047#18048#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1695">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayerUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="185" column="52" lean-forward="true" selection-start-line="185" selection-start-column="52" selection-end-line="185" selection-end-column="52" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/AllSongs.java">
+    <entry file="file://$PROJECT_DIR$/src/jamify/SongMetaData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
-          <caret line="242" column="56" lean-forward="true" selection-start-line="242" selection-start-column="56" selection-end-line="242" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="555">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -740,7 +812,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/FancyStuff.java">
+    <entry file="file://$PROJECT_DIR$/src/jamify/SongMetaData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
@@ -788,7 +860,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/FancyStuff.java">
+    <entry file="file://$PROJECT_DIR$/src/jamify/SongMetaData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="48" lean-forward="true" selection-end-line="48" />
@@ -841,6 +913,9 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/io/ObjectStreamClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/jamify/Allsongs.csv" />
+    <entry file="file://$PROJECT_DIR$/src/jamify/DisplayAllSongs.java" />
+    <entry file="file://$PROJECT_DIR$/src/jamify/JamifyCheck.java" />
     <entry file="file://$PROJECT_DIR$/src/jamify/PlaylistNamePath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -848,77 +923,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java">
+    <entry file="file://$PROJECT_DIR$/src/jamify/SavePlaylists.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="336">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/SavePlaylists.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/javafx-src.zip!/javafx/embed/swing/JFXPanel.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/io/File.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/util/Collection.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/plaf/basic/BasicButtonListener.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/javafx-src.zip!/javafx/scene/media/MediaPlayer.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/javax/swing/JSlider.java" />
+    <entry file="file://$PROJECT_DIR$/src/jamify/PlayingTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/javafx-src.zip!/javafx/scene/media/Media.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/javax/imageio/ImageIO.java" />
+    <entry file="file://$PROJECT_DIR$/src/jamify/SongDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="1484" column="16" selection-start-line="1484" selection-start-column="16" selection-end-line="1484" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jamify/CreatePlayListActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayerUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2065">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="99" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/SongDetails.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1695">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayer.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/src.zip!/java/awt/WaitDispatchSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1236">
-          <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jamify/FancyStuff.java">
+    <entry file="file://$PROJECT_DIR$/src/jamify/SongMetaData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="170" column="5" lean-forward="true" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
+        <state relative-caret-position="15">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -927,47 +1003,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jamify/AudioPlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="90" column="58" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="90" selection-end-column="58" />
+        <state relative-caret-position="118">
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2570#2571#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#5528#5529#0" expanded="true" />
-            <element signature="e#5607#5608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jamify/MusicPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jamify/AllSongs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="354" column="5" selection-start-line="354" selection-start-column="5" selection-end-line="354" selection-end-column="5" />
+        <state relative-caret-position="378">
+          <caret line="567" column="44" selection-start-line="567" selection-start-column="44" selection-end-line="567" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1002#1010#0" expanded="true" />
-            <element signature="e#1274#1282#0" expanded="true" />
-            <element signature="e#2232#2233#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#5766#7306#0" expanded="true" />
-            <element signature="e#7305#7306#0" expanded="true" />
-            <element signature="e#7489#9108#0" expanded="true" />
-            <element signature="e#9107#9108#0" expanded="true" />
-            <element signature="e#9264#13622#0" expanded="true" />
-            <element signature="e#13621#13622#0" expanded="true" />
-            <element signature="e#17796#18048#0" expanded="true" />
-            <element signature="e#18047#18048#0" expanded="true" />
+            <element signature="method#addToQueueStart#0;class#AllSongs#0" />
+            <element signature="docComment;method#displaySongsOnThePanel#0;class#AllSongs#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jamify/resources/AllSongs.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="101" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
         </state>
       </provider>
     </entry>

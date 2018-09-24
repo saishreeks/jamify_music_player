@@ -27,6 +27,7 @@ public class AudioPlay extends AllSongs {
     //variables
     public MediaPlayer mediaPlayer;
     public Media[] mediaFile;
+    PlayingTimer playingTimer = MusicPlayer.playingTimer;
 
     //constructor
     public AudioPlay() {
@@ -51,6 +52,8 @@ public class AudioPlay extends AllSongs {
                     e1.printStackTrace();
                 } */
                 mediaPlayer.play();
+                playingTimer.setAudioClip(mediaPlayer.getMedia());
+                playingTimer.resumeTimer();
                 autoNext(AudioPlay.this.getSongQ(), mediaFile);
             }
         });
@@ -58,7 +61,8 @@ public class AudioPlay extends AllSongs {
         MusicPlayer.pause.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                mediaPlayer.pause();
+                mediaPlayer.pause();//???????????????????????????????
+                pause(playingTimer);
             }
         });
 
@@ -66,6 +70,7 @@ public class AudioPlay extends AllSongs {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mediaPlayer.seek(mediaPlayer.getCurrentTime().multiply(1.5));
+                playingTimer.forwardSeek(1.5);
             }
         });
 
@@ -73,6 +78,7 @@ public class AudioPlay extends AllSongs {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mediaPlayer.seek(mediaPlayer.getCurrentTime().divide(1.5));
+                playingTimer.rewindSeek(1.5);
             }
         });
 
@@ -80,6 +86,8 @@ public class AudioPlay extends AllSongs {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mediaPlayer.stop();
+                playingTimer.pauseTimer();
+                playingTimer.reset();
             }
         });
 
@@ -100,8 +108,7 @@ public class AudioPlay extends AllSongs {
                         }
                         mediaPlayer = new MediaPlayer(mediaFile[0]);   //play the next song from Q
                         try {
-                            fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " "));
-                            fs.displaySongDetails(fs.fancy(path));
+                            fs.displaySongDetails(fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " ")));
                             MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
                             MusicPlayer.songdetailParentPanel.revalidate();
                             MusicPlayer.songdetailParentPanel.repaint();
@@ -109,6 +116,9 @@ public class AudioPlay extends AllSongs {
                             e1.printStackTrace();
                         }
                         mediaPlayer.play();
+                        playingTimer.pauseTimer();
+                        playingTimer.reset();
+                        playingTimer.resumeTimer();
                         autoNext(getSongQ(), mediaFile);  //ensures that next song in Q is played automatically without clicking next
                     } else {
                         //POPUP Saying no songs to play next in the queue?
@@ -129,11 +139,18 @@ public class AudioPlay extends AllSongs {
                         mediaFile[0] = new Media(new File(playSong).toURI().toString());
                     }
                     mediaPlayer = new MediaPlayer(mediaFile[0]);
+
                     try {
-                        fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " "));
+                        fs.displaySongDetails(fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " ")));
+                        MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
+                        MusicPlayer.songdetailParentPanel.revalidate();
+                        MusicPlayer.songdetailParentPanel.repaint();
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
+                    playingTimer.pauseTimer();
+                    playingTimer.reset();
+                    playingTimer.resumeTimer();
                     mediaPlayer.play();
                     autoNext(getSongQ(), mediaFile);
                 } else {
@@ -173,11 +190,11 @@ public class AudioPlay extends AllSongs {
                         mediaFile[0] = new Media(new File(playSong).toURI().toString());
                     }
                     mediaPlayer = new MediaPlayer(mediaFile[0]);
-                   /* try {
+                    try {
                         fs.fancy(mediaFile[0].getSource().toString().replace("file:","").replace("%20"," "));
                     } catch (IOException e1) {
                         e1.printStackTrace();
-                    }*/
+                    }
                     //CHECK IF AUTONEXT IN SHUFFLE SHOWS METDATA AFTER REVOVING PREV CODE LINEES :YES
                     mediaPlayer.play();
                     autoNext(getSongQ(), mediaFile);
@@ -187,6 +204,35 @@ public class AudioPlay extends AllSongs {
             }
         });
 
+        MusicPlayer.slider.addMouseMotionListener(new MouseMotionAdapter() {
+            boolean isDragging;
+
+            @Override
+            public void mouseDragged(MouseEvent arg0) {
+                isDragging = true;
+                try {
+                    int trackPosX = (int) (mediaPlayer.getCurrentTime().toMillis()/mediaPlayer.getStopTime().toMillis() * mediaPlayer.getTotalDuration().toMillis()) + 1000;
+//                    double constValue = mediaPlayer.getMedia().getDuration().toMillis() / 10000;
+//                    System.out.println(MusicPlayer.slider.getValue());
+                    int draggedVal=MusicPlayer.slider.getValue()+20;
+                    playingTimer.moveSeek(trackPosX); //moves by 500 ms??
+//                    System.out.println(dv + "dv");
+//                    MusicPlayer.slider.setValue(dv);
+//                    Duration draggedVal = new Duration(dv);
+//                    System.out.println(draggedVal + "draggedVal");
+                    mediaPlayer.seek(Duration.millis(trackPosX));
+                } catch (Exception e3) {
+
+                } finally {
+                    isDragging = false;
+                }
+            }
+        });
+
+    }
+    public void pause(PlayingTimer playingTimer) {
+        mediaPlayer.pause();
+        playingTimer.pauseTimer();
     }
 
     /*autonext function*/
@@ -205,12 +251,20 @@ public class AudioPlay extends AllSongs {
                         mediaFile[0] = new Media(new File(playSong).toURI().toString());
                     }
                     mediaPlayer = new MediaPlayer(mediaFile[0]);
+
                     try {
-                        fs.fancy(mediaFile[0].getSource().toString().replace("file:","").replace("%20"," "));
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                        fs.displaySongDetails(fs.fancy(mediaFile[0].getSource().toString().replace("file:", "").replace("%20", " ")));
+                        MusicPlayer.window.getContentPane().add(MusicPlayer.songdetailParentPanel);
+                        MusicPlayer.songdetailParentPanel.revalidate();
+                        MusicPlayer.songdetailParentPanel.repaint();
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
                     }
                     mediaPlayer.play();
+                    playingTimer.setAudioClip(mediaPlayer.getMedia());
+                    playingTimer.pauseTimer();
+                    playingTimer.reset();
+                    playingTimer.resumeTimer();
                     autoNext(getSongQ(), mediaFile);
                 } else {
                     //POPUP Saying no songs to play next in the queue?
